@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            text-align:  center; 
+        }
+    </style>
 </head>
 <body>
-    <h1>
+    <h1 style="color: aqua;">
         Git-Github
     </h1>
+    <button onclick="changeBackgroudColor()">DarkMode</button>
+
+    <script>
+        function changeBackgroudColor() {
+            let color = "rgb(0, 0, 0)" // Cor preta
+
+            if(document.body.style.backgroundColor == color){
+                color = "rgb(224, 255, 255)"
+            } else{
+                color = "rgb(0, 0, 0)"
+            }
+
+            document.body.style.backgroundColor = color //para exibir a cor 
+
+        }
+    </script>
+
 </body>
 </html>
+
