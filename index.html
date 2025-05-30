@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align:  center; 
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: aqua;">
+        Git-Github
+    </h1>
+    <button onclick="changeBackgroudColor()">DarkMode</button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam nemo beatae saepe modi nam consequatur, corporis porro obcaecati suscipit quos optio, quia ut provident facilis laborum iure voluptatem itaque. Blanditiis!</p>
+
+    <script>
+        function changeBackgroudColor() {
+            let color = "rgb(0, 0, 0)" // Cor preta
+
+            if(document.body.style.backgroundColor == color){
+                color = "rgb(224, 255, 255)"
+            } else{
+                color = "rgb(0, 0, 0)"
+            }
+
+            document.body.style.backgroundColor = color //para exibir a cor 
+
+        }
+    </script>
+
+</body>
+</html>
+
